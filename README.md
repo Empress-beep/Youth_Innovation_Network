@@ -1,9 +1,9 @@
 
 
 
-# 青年创新网数据爬虫
+# 电商数据爬虫
 
-本项目是一个用于采集青年创新网数据的爬虫程序，采用 Python 作为主要开发语言，结合 JavaScript 进行加密参数处理，数据存储使用 MySQL 数据库。
+本项目是一个用于采集电商平台数据的爬虫程序，采用 Python 作为主要开发语言，结合 JavaScript 进行加密参数、响应体解密处理，数据存储使用 MySQL 数据库。
 
 ## 项目结构
 
@@ -72,8 +72,8 @@ python main.py
 
 ### spider.py
 爬虫核心模块，包含 `QCW` 类，主要方法：
-- `get_index_url()` - 获取首页 URL
-- `get_data(page)` - 获取指定页码数据
+- `get_index_url()` - 获取首页key和iv
+- `get_data(page)` - 参数加密并获取指定页码数据
 - `decrypt_data(res)` - 解密响应数据
 - `parse_data(data)` - 解析数据
 - `save_data(data)` - 保存数据到数据库
