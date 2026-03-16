@@ -89,6 +89,10 @@ python main.py
 ### reverse.js / depend.js
 JavaScript 加密解密工具，用于处理网站的安全验证参数。
 
+![输入图片说明](.idea/Snipaste_2026-03-16_20-40-15.jpg)
+
+![输入图片说明](.idea/Snipaste_2026-03-16_20-35-00.jpg)
+
 ## 注意事项
 
 - 请确保 MySQL 服务已启动
