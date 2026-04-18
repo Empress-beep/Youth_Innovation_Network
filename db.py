@@ -1,3 +1,4 @@
+# 数据库存储文件
 import pymysql
 import configparser
 from loguru import logger as log
