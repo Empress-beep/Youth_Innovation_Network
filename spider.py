@@ -18,18 +18,15 @@ class QCW:
         self.index_url = index_url
         self.header = {
             "accept": "application/json, text/javascript, */*; q=0.01",
-            # "accept-encoding": "gzip, deflate, br, zstd",
             "accept-language": "zh-CN,zh;q=0.9",
             "app-guestid": "19673584A8B0B539634CD41F786D1244",
             "app-version": "0",
             "cache-control": "no-cache",
-            # "content-length": "698",
             "content-type": "application/json",
             "data-version": "1",
             "origin": "https://xie.17qcc.com",
             "pragma": "no-cache",
             "priority": "u=1, i",
-            # "qcc-pc-referer": "https://xie.17qcc.com/",
             "referer": "https://xie.17qcc.com/",
             "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Microsoft Edge\";v=\"145\", \"Chromium\";v=\"145\"",
             "sec-ch-ua-mobile": "?0",
@@ -146,12 +143,3 @@ class QCW:
             response = self.get_data(page)
             log.info('----正在调用数据解密函数----')
             self.decrypt_data(response)
-
-
-# if __name__ == '__main__':
-#     # 首页地址，用于获取key和iv
-#     index_url = 'https://xie.17qcc.com/'
-#     # 数据地址，用于获取数据
-#     data_url = 'https://newopenapiweb.17qcc.com/api/services/app/SearchFactory/GetPageList'
-#     h2 = QCW(index_url=index_url, data_url=data_url)
-#     h2.main()
