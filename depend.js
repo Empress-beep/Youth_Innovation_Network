@@ -1,3 +1,4 @@
+// 逆向文件所需要的依赖
 window = global;
 navigator = {'appName': 'Netscape'}
 
