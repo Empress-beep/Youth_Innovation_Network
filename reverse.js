@@ -1,3 +1,4 @@
+// 逆向文件(加密/解密函数)
 require('./depend')
 window = global;
 CryptoJS = require('crypto-js')
@@ -1020,18 +1021,6 @@ function get_data(page, qccppm, qccrkeys) {
     return _0x2be963
 }
 
-// qccppm = "BeFppLWPxxrqjmzk37ZNaL74qwYI9EsZ|ZSpH4HeZcJZ0zbLz|003A840D68DDFC312587A027DE694B5A"
-// qccrkeys = [
-//     "0",
-//     "7E9963739DB05E87EA1C760FBE457FF8",
-//     "4",
-//     "123456",
-//     "0",
-//     "OKLGjpWXdJCPEkqzv\"-M;y3FGZS\\dGUEDqG!u}miCiHEGxUXdP8vJ\\mb@\"y5d|TU~Yb-,OKjF|K [c%x9RG:Z!`G2\\rPrNlPwG'LFk7frrS^%mYixElm#x8>UNEvZ8BputOkJhjZBwfrPn[pQtBp>tVNM}`=p.eIFkpm1p}d41OPo={A9}(RyHe]NxGA6>JvrZ^Vfk+zq7oM5j^lu_-fYPG4#].nCiPFGJSY+_CK{Lm`G&2wUO<7GBu.>>23\\xSN]eu8lekhY?a1huxzHit@we/Zxst^LS!dnnFig;xMo09Qqm:mp9\\#iMFIs\\oVGE[_l;]55|eeupz\\[Gi9{Z;:IpnKkzQyWHPv3i\\Ba`41kt3HY;9{\\mDXRzprV_mPlHrz9t~'VrULDJ~rd&p?wSMFGW``w7qozG;mv+ki;L:PpM}%;UcvDRVyUGoRqLz[:PyIxujCfGHZD{.SRWpi!jfF8OOWV78J\"io5jZ5K[zh\":i2ETUI8ex0~ttwt;Mf0nLH5mPNlU^mir7{jqz$n{O68y\\p=c{%9nYSw]ZsK=GDSEEQ#al\\jjV}hgk\",X;q{g47RxaqrCmDf_a?^6tp\\TV!$y(iMpjEzQB\\J6\\ZQ26K]>N2ggEWr!^t(XW|TWn;}dnnURXsjJv|Ado:gg/|qRbWsE77;ipROdqGCwkZn|HmSUrY]R=!\"91lvD6]S@Oqmt7X{lzVE(gdqqO_sC-<NghuWs=|X5rw4VS|A$\\u]spR:QJ\"d4lZS\\XVXGgmGS6DFV@Wn/7D9W5K!fF:LKGTqkn)}6Z45:HRPvJ7wlxuFwS\"pk}wet{pU^zk^pchHjyso2SwW|sGja((qU|UnJZKS",
-//     "OKJjSJ>]fYsIVMh<RghHCSXEG=UddJEDlUQKugflTcHHrLtj)yIu7F1l`OWLNoEMt|YA}Hu;eXhpg_l8VhIzxSdwo|ciw/ZU$y5gPoEQLz_IvrF8rHi~xn(`6-:8VNwkx;9zm;9<_FttnWHNn UAxXi85fJ`a*Z|4:M8hYA1:Qf3.ogbxI=SVY{TH4#[y<ZHnT|opo9O1fpu^WfpzWKFDUGK",
-//     "1"
-// ]
-// console.log(get_data(3, qccppm, qccrkeys));
 
 
 function _0x528645(_0x23ddca) {
@@ -1078,7 +1067,3 @@ function decrypt_data(res, qccppm){
     
     return data
 }
-// res = "6D969C5FC7570C102F4DBC98DC3CFAE0FB087989D69D2151FB25D908B2EF2C26242D2B9E155CC729E99B016B34F6ACED59E76C005E1D2FC5333AEA887B178F040430328F1E355D957BEE294F65E339871B34410CBA748C8A072BDCB25EB62E6F17CA122A72247A8F1B73920BF0FFC9DD"
-// // qccppm = "00GIkHX6F882FuWAN2CrrRPMCvwH8W1S|hKkH9PZf4CVQcG3g|185E0C78A726F269E66EFA8AFA813901"
-// qccppm = "9VcMcHJIQ8iv5ZCKw7xjtl67t6Xb3A2c|NTNHCj3wLfJRNaq7|A72FB5FCCBE7267681350DB5EC985BBC"
-// console.log(decrypt_data(res, qccppm));
